@@ -15,3 +15,5 @@ RUN git clone https://github.com/ariya/phantomjs.git
 RUN cd phantomjs && \
     git checkout ${PHANTOMJS_VERSION} && \
     ./build.sh --confirm
+RUN mv phantomjs/bin/phantomjs bin/.
+RUN rm -rf phantomjs

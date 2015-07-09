@@ -19,7 +19,6 @@ Pull from hub:
 docker pull stevenalexander/phantomjs
 ```
 
-
 Test PhantomJS:
 
 ```
