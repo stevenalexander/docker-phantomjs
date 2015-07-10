@@ -22,14 +22,14 @@ docker pull stevenalexander/phantomjs
 Test PhantomJS:
 
 ```
-docker run -it --rm stevenalexander/phantomjs /phantomjs/bin/phantomjs -v
+docker run -it --rm stevenalexander/phantomjs phantomjs -v
 ```
 
 Run with [ghostdriver](https://github.com/detro/ghostdriver) for remote control
 
 ```
-docker run -it --rm stevenalexander/phantomjs /phantomjs/bin/phantomjs --webdriver=8080
+docker run -it --rm stevenalexander/phantomjs phantomjs --webdriver=8080
 
 #With selenium grid hub
-#docker run -it --rm stevenalexander/phantomjs /phantomjs/bin/phantomjs --webdriver=8080 --webdriver-selenium-grid-hub=http://${HUBIP}:4444
+#docker run -it --rm stevenalexander/phantomjs phantomjs --webdriver=8080 --webdriver-selenium-grid-hub=http://${HUBIP}:4444
 ```
